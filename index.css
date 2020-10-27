@@ -1,0 +1,233 @@
+
+html, body {
+  background-color: #121212;
+  text-decoration-style: solid;
+  font-family: 'B612', sans-serif;
+    height: 100%;
+}
+
+a[target=_blank] {
+visibility: hidden;
+}
+
+body {
+  transition: all 1s;
+  color: #818181
+}
+
+header {
+  color: #1db954;
+  background-color: #535353;
+  z-index: 998;
+  box-shadow:inset 1px 1px 100px 1px #121212;
+}
+
+
+
+.sidenav {
+
+  transition: all 1s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  transition: all 1s;
+  padding: 1vw 1vw 1vw  5vw ;
+  text-decoration: none;
+  font-size: 4vw;
+  color: #818181;
+  display: block;
+  word-break: keep-all;
+
+}
+
+.sidenav a:hover {
+  transition: all 1s;
+  text-decoration: none;
+  color: #1db954;
+}
+
+  .closeNavBtn {
+  position: absolute;
+  top: 1vw;
+  right: 3vw;
+  font-size: 100vw;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+div.scrollmenu {
+  padding-top: 1%;
+  overflow: auto;
+  white-space: nowrap;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+}
+
+div.scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+}
+
+
+.car-img{
+  width: auto;
+  height: auto;
+}
+
+.container {
+  position: fixed;
+  bottom: 5%;
+  width: 99%;
+  height: 10vw;
+}
+.container .search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 10vw;
+  height: 10vw;
+  background: #1db954;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 996;
+}
+.container .search:hover {
+  cursor: pointer;
+}
+
+
+.container input {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 8vw;
+  height: 8vw;
+  outline: none;
+  border: none;
+  background: #1db954;
+  color: white;
+  text-shadow: 0 0 10px #1db954;
+  padding: 0 80px 0 20px;
+  border-radius: 30px;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 997;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.container input:hover {
+  cursor: pointer;
+}
+.container input:focus {
+  width: 95%;
+  opacity: 1;
+  cursor: text;
+}
+.container input:focus ~ .search {
+  opacity: 0;
+}
+
+.container input::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+#magnifyingLens{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 6.5vw;
+}
+
+
+.login100-social-item {
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    text-decoration: none;
+}
+
+html * a{
+  color: #818181;
+  display: block;
+  word-break: keep-all;
+
+}
+
+html * a:hover {
+  transition: all 1s;
+  text-decoration: none;
+  color: #1db954;
+}
+
+.form-button {
+  background-color: #818181;
+}
+
+.form-button:hover{
+    background-color: #1db954;
+}
+
+.form-control:focus {
+  background-color: #ddd;
+}
+
+.nice-bg{
+  background-image: url("img/concert.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
